@@ -5,7 +5,7 @@ import React from 'react'
 const BlogCard = ({ post }: any) => {
   return (
     <>
-      <div className='col-span-full md:col-span-5'>
+      <div className='col-span-full lg:col-span-5'>
         {post.images?.url && (
           <img src={post.images.url} alt='cover photo' className='' />
         )}

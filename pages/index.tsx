@@ -55,7 +55,10 @@ export default function Home({ posts }: any) {
           <h1 className='m-10 text-6xl font-bold'>Bloggy</h1>
         </div>
         {posts?.map((p: any) => (
-          <div className='grid grid-cols-12 m-4 bg-gray-700' key={p.id}>
+          <div
+            className='grid grid-cols-12 m-4 bg-gray-700 rounded-lg'
+            key={p.id}
+          >
             <BlogCard post={p} />
           </div>
         ))}
